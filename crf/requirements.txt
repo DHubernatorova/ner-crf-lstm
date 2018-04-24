@@ -1,0 +1,5 @@
+nltk
+numpy
+beautifulsoup4
+python_crfsuite
+scikit_learn
