@@ -1,0 +1,11 @@
+             precision    recall  f1-score   support
+
+   persName       0.96      0.99      0.97    163681
+   geogName       0.83      0.87      0.85      5648
+    orgName       0.62      0.46      0.53      1320
+  placeName       0.74      0.42      0.54     10009
+       date       0.82      0.72      0.77      3598
+       time       0.93      0.70      0.80      2478
+          I       0.57      0.51      0.54       107
+
+avg / total       0.94      0.94      0.94    186841
