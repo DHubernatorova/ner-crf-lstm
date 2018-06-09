@@ -4,6 +4,7 @@ import pycrfsuite
 import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
+from sklearn.model_selection import StratifiedKFold
 from datetime import datetime
 
 with open("word_data_file.obj", "rb") as infile:
@@ -68,12 +69,26 @@ def extract_features(doc):
 def get_labels(doc):
     return [label for (token, postag, label) in doc]
 
-
 X = [extract_features(doc) for doc in data]
 y = [get_labels(doc) for doc in data]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 trainer = pycrfsuite.Trainer(verbose=True)
+
+##skf = StratifiedKFold(n_splits=5, random_state=123)
+##group = 0
+##labels = {"persName": 1, "geogName":2, "orgName":3, "placeName":4, "date":5,
+##          "time":6, "I": 0}
+##truths_orig = np.array([labels[tag] for row in y for tag in row])
+##split_indices = skf.split(np.zeros(len(truths_orig)),truths_orig)
+##print(split_indices)
+### X is the feature set and y is the target
+##for train_index, test_index in split_indices: 
+##    print("Train:", train_index, "Test:", test_index) 
+###    X_train, X_test = X[train_index], X[test_index] 
+###    y_train, y_test = y[train_index], y[test_index]
+###    trainer.append(X_train, y_train, group=group)
+###    group += 1
 
 # Submit training data to the trainer
 for xseq, yseq in zip(X_train, y_train):
@@ -97,7 +112,8 @@ trainer.set_params({
 
 # Provide a file name as a parameter to the train function, such that
 # the model will be saved to the file when training is finished
-trainer.train('crf.model')
+for i in range(5):
+    trainer.train('crf.model', holdout=i)
 
 # Generate predictions
 tagger = pycrfsuite.Tagger()
@@ -133,3 +149,5 @@ def writeResultsToFile(report):
         f.write(report)
 
 writeResultsToFile(report)
+
+

@@ -27,8 +27,7 @@ def word2features(doc, i):
         'word.isupper()': word.isupper(),
         'word.istitle()': word.istitle(),
         'word.isdigit()': word.isdigit(),
-        'postag': postag,
-        'postag[:2]': postag[:2],        
+        'postag': postag 
     }
     if i > 0:
         word1 = doc[i-1][0]
@@ -37,8 +36,7 @@ def word2features(doc, i):
             '-1:word.lower()': word1.lower(),
             '-1:word.istitle()': word1.istitle(),
             '-1:word.isupper()': word1.isupper(),
-            '-1:postag': postag1,
-            '-1:postag[:2]': postag1[:2],
+            '-1:postag': postag1
         })
     else:
         features['BOS'] = True
@@ -50,8 +48,7 @@ def word2features(doc, i):
             '+1:word.lower()': word1.lower(),
             '+1:word.istitle()': word1.istitle(),
             '+1:word.isupper()': word1.isupper(),
-            '+1:postag': postag1,
-            '+1:postag[:2]': postag1[:2],
+            '+1:postag': postag1
         })
     else:
         features['EOS'] = True
@@ -91,7 +88,7 @@ f1_flat = metrics.flat_f1_score(y_test, y_pred,
                       average='weighted', labels=labels)
 print(f1_flat)
 print(metrics.flat_classification_report(
-    y_test, y_pred, labels=sorted_labels, digits=3
+    y_test, y_pred, labels=labels, digits=3
 ))
 
 
