@@ -405,50 +405,38 @@ if __name__ == "__main__":
     fileids = x.fileids()
     all_word_data = []
     with open('data.txt', 'w') as words_object:
+        i = 0
         for fileid in fileids:
             x = NKJPCorpusReader(root='/home/dominik/Downloads/NKJP-PodkorpusMilionowy-1.2', fileids=fileid.split("/")[0])
             names = x.named_entities()
+            i += 1
+            if i > 10:
+                break
             words = x.words()
             fileid = '/' + fileid
             sents = x.sents([fileid])
-            # print(sents)
             word_data = []
             named_data = []
             zero_length = 0
             length = 0
             print(fileid)
+            for named, name in names:
+                for val in re.split('\s+', named):
+                    named_data.append((val, name))
+            for word, tag in words:
+                label = next((name for ind, (named, name) in enumerate(named_data) if named == word), '0')
+                all_word_data.append((word, label))
 
             for sent in sents:
-                # print(sent)
                 length += len(sent.split(' '))
-
                 try:
                     for i in range(zero_length, length-1):
                         # print(words[i][0])
                         words_object.write(words[i][0])
                         words_object.write('\t')
-                        words_object.write(words[i][1])
+                        words_object.write(all_word_data[i][1])
                         words_object.write('\n')
                     words_object.write('\n')
                     zero_length += len(sent.split(' '))
                 except IndexError:
                     pass
-
-    #             for word, tag in words:
-    #                 label = next((name for ind, (named, name) in enumerate(named_data) if named == word), 'I')
-    #                 word_data.append((word, tag, label))
-    #
-    #
-    #     for named, name in names:
-    #         for val in re.split('\s+', named):
-    #             named_data.append((val, name))
-    #     for word, tag in words:
-    #         label = next((name for ind, (named, name) in enumerate(named_data) if named == word), 'I')
-    #         word_data.append((word, tag, label))
-    #     all_word_data.append(word_data)
-    #     print("Words in " + fileid + " " + str(len(word_data)))
-    # print(str(len(all_word_data)))
-    # with open('data.txt', 'wb') as words_object:
-    #     words_object.write('')
-    #     # pickle.dump(all_word_data, words_object)
-
