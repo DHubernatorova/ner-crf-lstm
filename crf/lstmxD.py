@@ -1,5 +1,5 @@
 import anago
-from anago.utils import load_data_and_labels
+# from anago.utils import load_data_and_labels
 
 # from keras.models import Sequential
 from keras.layers import Dense, Activation
@@ -160,6 +160,57 @@ class Sequence(object):
         return self
 
 
+def load_data_and_labels(filename):
+    """Loads data and label from a file.
+
+    Args:
+        filename (str): path to the file.
+
+        The file format is tab-separated values.
+        A blank line is required at the end of a sentence.
+
+        For example:
+        ```
+        EU	B-ORG
+        rejects	O
+        German	B-MISC
+        call	O
+        to	O
+        boycott	O
+        British	B-MISC
+        lamb	O
+        .	O
+
+        Peter	B-PER
+        Blackburn	I-PER
+        ...
+        ```
+
+    Returns:
+        tuple(numpy array, numpy array): data and labels.
+
+    Example:
+        >>> filename = 'conll2003/en/ner/train.txt'
+        >>> data, labels = load_data_and_labels(filename)
+    """
+    sents, labels = [], []
+    words, tags = [], []
+    with open(filename) as f:
+        for line in f:
+            # print(line)
+            line = line.rstrip()
+            if line:
+                word, tag = line.split('\t')
+                if word and tag:
+                    words.append(word)
+                    tags.append(tag)
+            else:
+                sents.append(words)
+                labels.append(tags)
+                words, tags = [], []
+
+    return sents, labels
+
 
 
 if __name__ == "__main__":
@@ -171,9 +222,15 @@ if __name__ == "__main__":
     # ])
 
     model = Sequence()
-    x_train, y_train = load_data_and_labels('data.txt')
-    model.fit(x_train, y_train, batch_size=1, epochs=20, shuffle=False)
+    x_train, y_train = load_data_and_labels('some.txt')
+    X_train = []
+    Y_train = []
+    for i in range(len(x_train)):
+        if len(x_train[i]) and len(y_train[i]):
+            X_train.append(x_train[i])
+            Y_train.append(y_train[i])
+    model.fit(X_train[:1000], Y_train[:1000], batch_size=1, epochs=20, shuffle=False)
 
     # test
-    score = model.score(x_train, y_train)
+    score = model.score(X_train[1000:2000], Y_train[1000:2000])
     print(score)

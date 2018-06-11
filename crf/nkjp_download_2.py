@@ -405,13 +405,9 @@ if __name__ == "__main__":
     fileids = x.fileids()
     all_word_data = []
     with open('data.txt', 'w') as words_object:
-        i = 0
         for fileid in fileids:
             x = NKJPCorpusReader(root='/home/dominik/Downloads/NKJP-PodkorpusMilionowy-1.2', fileids=fileid.split("/")[0])
             names = x.named_entities()
-            i += 1
-            if i > 10:
-                break
             words = x.words()
             fileid = '/' + fileid
             sents = x.sents([fileid])
