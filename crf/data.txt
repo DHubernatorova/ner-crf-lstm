@@ -1,0 +1,369 @@
+Zatrzasnął	0
+drzwi	0
+od	0
+mieszkania	0
+dwa	0
+razy	0
+przekręcił	0
+klucz	0
+nacisnął	0
+klamkę	0
+by	0
+sprawdzić	0
+czy	0
+dobrze	0
+zamknięte	0
+zbiegł	0
+po	0
+schodach	0
+minął	0
+furtkę	0
+także	0
+ją	0
+zamknął	0
+i	0
+znalazł się	0
+na	0
+wąskiej	0
+uliczce	0
+między	0
+ogródkami	0
+gdzie	0
+drzemały	0
+w	0
+majowym	0
+słońcu	0
+trójkątne	0
+ciemnozielone	0
+świerki	0
+jakich	0
+nie było	0
+w pobliżu	0
+jego	0
+domu	0
+Bohaterem	0
+powieści	0
+
+jest	0
+miasto	0
+Krzemieniec	placeName
+Jak	0
+za	0
+
+Słowackiego	persName
+funkcjonuje	0
+Liceum	orgName
+i	0
+płynie	0
+Ikwa	geogName
+Krzemieniec	placeName
+powieściowy	0
+
+tamtym	0
+Krzemieńcem	placeName
+ale	0
+jest	0
+także	0
+miastem	0
+wywołanym	0
+z	0
+osobistej	0
+pamięci	0
+Paźniewskiego	persName
+Swoją	0
+drogę	0
+
+tego	0
+miasta	0
+autor	0
+Krótkich	0
+dni	0
+zaczął	0
+z daleka	0
+bardzo	0
+Nigdy	0
+nie byłem	0
+w	0
+
+domu	0
+a	0
+przecież	0
+wszystko	0
+pamiętam	0
+doskonale	0
+Ale	0
+dzisiaj	0
+Jaką	0
+dzisiaj	0
+
+rolę	0
+
+Przybosia	persName
+Oczywiście	0
+już	0
+sam	0
+fakt	0
+
+istnienia	0
+jest	0
+wartością	0
+Nasza	0
+literatura	0
+bogata	0
+w	0
+
+i	0
+w	0
+akty	0
+strzeliste	0
+jest	0
+uboga	0
+w	0
+teorie	0
+Rolę	0
+teoretyków	0
+spełniają	0
+felietoniści	0
+
+co	0
+tydzień	0
+fundują	0
+szkoły	0
+i	0
+formułują	0
+programy	0
+Dlatego	0
+założenia	0
+teoretyczne	0
+Przybosia	persName
+
+teorii	0
+Peipera	persName
+i	0
+Witkacego	persName
+a	0
+równolegle	0
+do	0
+propozycji	0
+systemów	0
+Irzykowskiego	persName
+i	0
+Sandauera	persName
+stanowią	0
+kapitał	0
+naszej	0
+myśli	0
+krytycznej	0
+,	0
+naturalny	0
+fundament	0
+każdej	0
+twórczości	0
+To są	0
+oczywistości	0
+Halina	persName
+
+we	0
+wszystkich	0
+
+każe	0
+swoim	0
+bohaterom	0
+szukać	0
+tożsamości	0
+W	0
+Babim	0
+lecie	0
+ma	0
+
+uznać	0
+za	0
+najistotniejsze	0
+kryterium	0
+tożsamości	0
+poczucie	0
+przynależności	0
+nie, nie, lecz	0
+do	0
+idei	0
+do	0
+kultury	0
+i	0
+mitów	0
+narodowych	0
+do	0
+tego	0
+co	0
+jest	0
+podstawą	0
+bytu	0
+każdego	0
+człowieczeństwa	0
+Miejsce	0
+na	0
+ziemi	0
+konkret	0
+fizyczny	0
+i	0
+
+jednocześnie	0
+jest	0
+tym	0
+co	0
+stanowi	0
+o	0
+wymiarze	0
+życia	0
+i	0
+losu	0
+Paźniewski	persName
+w	0
+Krótkich	0
+dniach	0
+ofiarował	0
+Kresom	geogName
+
+mniej	0
+niż	0
+z	0
+nich	0
+zaczerpnął	0
+Zatrzymał	0
+potop	0
+Zamówił	0
+kataklizm	0
+Stworzył	0
+wizję	0
+
+,	0
+
+spokoju	0
+
+burzą	0
+Z	0
+napięciem	0
+czekamy	0
+na	0
+chwilę	0
+
+będzie	0
+chwilą	0
+decydującą	0
+o	0
+losie	0
+bohatera	0
+Cóż za	0
+ulga	0
+Mija	0
+ostatnie	0
+zdanie	0
+
+Co za	0
+wspaniała	0
+
+Ocalająca	0
+"Plama"	0
+Piętaka	persName
+
+spośród	0
+kilku	0
+najznakomitszych	0
+
+także	0
+ze względu na	0
+jej	0
+zaklasyfikowanie	0
+wraz z	0
+całą	0
+twórczością	0
+tego	0
+pisarza	0
+do	0
+nurtu	0
+wiejskiego	0
+nie ma	0
+w	0
+odbiorze	0
+powszechnym	0
+tej	0
+rangi	0
+jaką	0
+rzeczywiście	0
+posiada	0
+Wszystko	0
+co	0
+Piętak	persName
+wyniósł	0
+z	0
+chłopskiej	0
+szkoły	0
+wyobraźni	0
+zaowocowało	0
+w	0
+"Plamie"	0
+
+subtelnością	0
+psychologiczną	0
+na	0
+jaką	0
+stać	0
+literaturę	0
+To nie są	0
+już	0
+wątpliwości	0
+religijne	0
+,,	0
+te	0
+wątpliwości	0
+pierwszego	0
+stopnia	0
+wtajemniczenia	0
+w	0
+
+świata	0
+wątpliwości	0
+Nieba	0
+w	0
+płomieniach	0
+czy	0
+Jana	persName
+Barois	persName
+Tu	0
+nie chodzi	0
+o	0
+sensowność	0
+dogmatów	0
+czy	0
+ścisłość	0
+religijnych	0
+wyobrażeń	0
+nie chodzi	0
+już	0
+o	0
+
+o	0
+tajemnicę	0
+stworzenia	0
+ale	0
+o	0
+normę	0
+etyczną	0
+Kto	0
+ją	0
+ustanowi	0
+kiedy	0
+Boga	persName
+zabrakło	0
+o	0
+tajemnicę	0
+stworzenia	0
+ale	0
+o	0
+normę	0
+etyczną	0
+Kto	0
+ją	0
+ustanowi	0
+kiedy	0
+Boga	persName
+zabrakło	0
